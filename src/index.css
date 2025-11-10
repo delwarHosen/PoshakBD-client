@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+#root {
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+@layer components {
+  .primary {
+    @apply bg-[#52A0DC];
+  }
+}

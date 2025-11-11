@@ -6,7 +6,7 @@ import { TbBrandMeta } from "react-icons/tb";
 export default function Topbar() {
     return (
         <div className="primary text-white">
-            <div className="container mx-auto px-10 flex justify-between items-center">
+            <div className="container flex justify-between items-center">
                 <div className="hidden md:flex gap-x-5 py-3">
                     <a href="#" className="hover:text-gray-300">
                         <TbBrandMeta className="h-5 w-5" />

@@ -2,13 +2,49 @@
 @plugin "daisyui";
 
 #root {
-    font-family: sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 @layer components {
   .primary {
     @apply bg-[#52A0DC];
+  }
+
+  .container {
+    @apply mx-auto px-10
+  }
+
+
+}
+
+@layer utilities {
+  .custom-scroll::-webkit-scrollbar {
+    height: 8px;
+    /* Horizontal scrollbar height */
+  }
+
+  .custom-scroll::-webkit-scrollbar-track {
+    background-color: theme('colors.white');
+    /* Tailwind gray-200 */
+    border-radius: 10px;
+  }
+
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background-color: theme('colors.white');
+    /* Tailwind blue-500 */
+    border-radius: 10px;
+  }
+
+  .custom-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: theme('colors.white');
+    /* Hover shade */
+  }
+
+  /* Firefox support */
+  .custom-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.white') theme('colors.white');
   }
 }

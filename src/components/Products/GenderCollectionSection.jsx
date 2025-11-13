@@ -4,8 +4,8 @@ import menImg from "../../assets/men.jpg"
 
 export default function GenderCollectionSection() {
     return (
-        <section className="py-16 px-4 lg:px-0">
-            <div className=" md:container flex flex-col md:flex-row gap-8">
+        <section className=" py-16 px-4 lg:px-0">
+            <div className=" md:mx-auto md:px-10 flex flex-col md:flex-row gap-8">
                 {/* women section */}
                 <div className="relative flex-1">
                     <img

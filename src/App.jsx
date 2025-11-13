@@ -1,20 +1,23 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import UserLayout from "./components/Layout/UserLayout"
 import Home from "./pages/Home"
+import { Toaster } from "sonner"
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<UserLayout />}>
-            {/* user route */}
-            <Route index element={<Home/>}/>
-          </Route>
-          <Route>
-            {/* admin route */}
-          </Route>
-        </Routes>
+        <Toaster position="top-right"/>
+          <Routes>
+            <Route path="/" element={<UserLayout />}>
+              {/* user route */}
+              <Route index element={<Home />} />
+            </Route>
+            <Route>
+              {/* admin route */}
+            </Route>
+          </Routes>
+       
       </BrowserRouter>
     </>
   )

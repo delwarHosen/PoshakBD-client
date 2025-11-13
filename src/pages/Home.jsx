@@ -1,14 +1,19 @@
 import Hero from "../components/Layout/Hero";
 import GenderCollectionSection from "../components/Products/GenderCollectionSection";
 import NewArrivals from "../components/Products/NewArrivals";
+import ProductDetails from "../components/Products/ProductDetails";
 
 
 export default function Home() {
   return (
     <div>
-        <Hero/>
-        <GenderCollectionSection/>
-        <NewArrivals/>
+      <Hero />
+      <GenderCollectionSection />
+      <NewArrivals />
+
+      {/* Best seller section */}
+      <h2 className="text-2xl text-center font-bold mb-4">Best Seller</h2>
+      <ProductDetails />
     </div>
   )
 }
